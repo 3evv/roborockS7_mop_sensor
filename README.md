@@ -12,7 +12,7 @@ The presence of the mopping platform/rig is detected via a hall(magnetic field) 
 ## The fix: 
 ![Fixed_module](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/34bfc63f-e0dc-486b-a130-800c3034ae96)
 
-Confirm with the app that the missing mop changes it's status to detected before assembly, and double check your connection - liquid damaged contacts tend to make poor souldiering surfaces, and a "cold" connection happened to me after the robot bumped into a wall (temporary fix with a fistbump was successful), despite cleaning it with IPA - had to dissasemble the thing twice :<, but I confirm it works.  
+Confirm with the app that the missing mop changes it's status to detected before assembly, and double check your connection - liquid damaged contacts tend to make poor soldiering surfaces, and a "cold" connection happened to me after the robot bumped into a wall (temporary fix with a fistbump was successful), despite cleaning it with IPA - had to dissasemble the thing twice :<, but I confirm it works.  
 
 ## Explanation: 
 ![Fixed_module (2)](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/a441053e-e44c-442b-b3ea-91144d676bb8)
