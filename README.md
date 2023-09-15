@@ -7,7 +7,7 @@ This is a short guide how to bypass the sensor determining if the mopping tray i
 
 The presence of the mopping platform/rig is detected via a hall(magnetic field) sensor. I firmly belive its the C6111 sensor listed [here](https://www.lcsc.com/product-detail/Magnetic-Sensors_Cross-chip-CC6111ST_C285991.html), with schematic available [here](https://datasheet.lcsc.com/lcsc/2304140030_Cross-chip-CC6111ST_C285991.pdf). The proper way would be the replace the sensor, but given that the failure mode is liquid damage on the board that contains it and rest of the circuit might fail in recent future, I advise against changing it. I just shorted two pins of the cable responsible for delivering voltage and recieving data from the board and it forced a mop detection.
 
-### TL:DR : Use prefered method to short sensing pin to +Vcc, in this case ~3.2V. Be **warned** that it ignores the actual state of the mop tray, duh.
+### TL:DR : Use prefered method: short sensing pin to +Vcc. Be **warned** that it ignores the actual state of the mop tray, duh.
 
 ## The fix: 
 ![Fixed_module](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/34bfc63f-e0dc-486b-a130-800c3034ae96)
