@@ -10,7 +10,7 @@ The presence of the mopping platform/rig is detected via a hall(magnetic field) 
 ### TL:DR : Use prefered method: short sensing pin to +Vcc via resistor. Be **warned** that it ignores the actual state of the mop tray, duh.
 
 ## The fix: 
-![Fixed_module](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/34bfc63f-e0dc-486b-a130-800c3034ae96)
+![fix2](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/2b39fb93-d6ee-42c2-98fb-98e536db93bb)
 
 Confirm with the app that the missing mop changes it's status to detected before assembly, and double check your connection - liquid damaged contacts tend to make poor soldiering surfaces, and a "cold" connection happened to me after the robot bumped into a wall (temporary fix with a fistbump was successful), despite cleaning it with IPA - had to dissasemble the thing twice :<, but I confirm it works.  
 
@@ -24,7 +24,7 @@ Confirm with the app that the missing mop changes it's status to detected before
 - Green - ~~Don't know what it does, prob. better to leave it alone.~~ 
 
 ~~Use your preffered method of shorting the two connections.~~ 
-Use resistor to fool the controller that the hall sensor is working properly. I suggest experimenting what combination of rezistances works for your board, since water damage makes things unpredictable, as I experienced myself. Consider using a voltage divider - in my case it worked fine with only 1 resistor. (These are just symbolic colours, not the ones on the wire connecting to the module!)
+Use resistor to fool the controller that the hall sensor is working properly. I suggest experimenting what combination of resistances works for your board, since water damage makes things unpredictable, as I experienced myself. Consider using a voltage divider - in my case it worked fine with only 1 resistor. (These are just symbolic colours, not the ones on the wire connecting to the module!)
 
 ## Photos of the module, 
 ![board 2](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/5f33c0ca-ea53-4d74-9158-61d39c83c23f)
