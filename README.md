@@ -7,7 +7,7 @@ This is a short guide how to bypass the sensor determining if the mopping tray i
 
 The presence of the mopping platform/rig is detected via a hall(magnetic field) sensor. I firmly belive its the C6111 sensor listed [here](https://www.lcsc.com/product-detail/Magnetic-Sensors_Cross-chip-CC6111ST_C285991.html), with schematic available [here](https://datasheet.lcsc.com/lcsc/2304140030_Cross-chip-CC6111ST_C285991.pdf). The proper way would be the replace the sensor, but given that the failure mode is liquid damage on the board that contains it and rest of the circuit might fail in recent future, I advise against changing it. I just shorted two pins of the cable responsible for delivering voltage and recieving data from the board and it forced a mop detection.
 
-### TL:DR : Use prefered method: short sensing pin to +Vcc via resistor. Be **warned** that it ignores the actual state of the mop tray, duh.
+### TL:DR : Use prefered method: short sensing pin to ground via resistor. Be **warned** that it ignores the actual state of the mop tray, duh.
 
 ## The fix: 
 ![fix2](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/2b39fb93-d6ee-42c2-98fb-98e536db93bb)
@@ -18,14 +18,14 @@ Confirm with the app that the missing mop changes it's status to detected before
 
 ![268359808-a441053e-e44c-442b-b3ea-91144d676bb8](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/120747b8-fcc4-4cd5-ae1b-2ec5e034faa1)
 
-- Blue - Ground 
+- Blue - Ground - connect to _Yellow_ with a smd resistor (10k Ohm in my case) - you can replace the hall sensor with your resistance.
 - **Yellow** - Sensing wire for the Hall sensor - use as output. 
-- **Red** - Vcc, in my case it read about 3.2 V - connect to _Yellow_ with a smd resistor (10k Ohm in my case) - you can replace the hall sensor with your resistance.
+- **Red** - Vcc, in my case it read about 3.2 V
 - Green - ~~Don't know what it does, prob. better to leave it alone.~~ 
 (These are just symbolic colours, not the ones on the wire connecting to the module!)
 ~~Use your preffered method of shorting the two connections.~~ Ignore the short between connector socket legs on the picture - its the old, unreliable fix.
 
-Use a resistor to fool the controller that the hall sensor is working properly. I suggest experimenting which combination of resistances works for your board since water damage makes things unpredictable as I experienced myself. Consider using a voltage divider - in my case it worked fine with only a 10k resistor. 
+Use a resistor to fool the controller that the hall sensor is working properly. I suggest experimenting which combination of resistances works for your board since water damage makes things unpredictable as I experienced myself. Consider using a voltage divider - in my case it worked fine with only a 10k resistor, but a pull-up between +3V and sense pin might be neccesary in your case. 
 
 ## Photos of the module, 
 ![board 2](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/5f33c0ca-ea53-4d74-9158-61d39c83c23f)
