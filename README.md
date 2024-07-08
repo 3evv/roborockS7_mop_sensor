@@ -22,10 +22,10 @@ Confirm with the app that the missing mop changes it's status to detected before
 - **Yellow** - Sensing wire for the Hall sensor - use as output. 
 - **Red** - Vcc, in my case it read about 3.2 V - connect to _Yellow_ with a smd resistor (10k Ohm in my case) - you can replace the hall sensor with your resistance.
 - Green - ~~Don't know what it does, prob. better to leave it alone.~~ 
+(These are just symbolic colours, not the ones on the wire connecting to the module!)
+~~Use your preffered method of shorting the two connections.~~ Ignore the short between connector socket legs on the picture - its the old, unreliable fix.
 
-~~Use your preffered method of shorting the two connections.~~ 
-
-Use resistor to fool the controller that the hall sensor is working properly. I suggest experimenting what combination of resistances works for your board, since water damage makes things unpredictable, as I experienced myself. Consider using a voltage divider - in my case it worked fine with only 1 resistor. (These are just symbolic colours, not the ones on the wire connecting to the module!)
+Use a resistor to fool the controller that the hall sensor is working properly. I suggest experimenting which combination of resistances works for your board since water damage makes things unpredictable as I experienced myself. Consider using a voltage divider - in my case it worked fine with only a 10k resistor. 
 
 ## Photos of the module, 
 ![board 2](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/5f33c0ca-ea53-4d74-9158-61d39c83c23f)
