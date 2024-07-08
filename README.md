@@ -16,7 +16,7 @@ Confirm with the app that the missing mop changes it's status to detected before
 
 ## Explanation: 
 
-![fix2](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/2b39fb93-d6ee-42c2-98fb-98e536db93bb)
+![268359808-a441053e-e44c-442b-b3ea-91144d676bb8](https://github.com/3evv/roborockS7_mop_sensor/assets/26227520/120747b8-fcc4-4cd5-ae1b-2ec5e034faa1)
 
 - Blue - Ground 
 - **Yellow** - Sensing wire for the Hall sensor - use as output. 
