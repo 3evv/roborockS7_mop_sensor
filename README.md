@@ -24,6 +24,7 @@ Confirm with the app that the missing mop changes it's status to detected before
 - Green - ~~Don't know what it does, prob. better to leave it alone.~~ 
 
 ~~Use your preffered method of shorting the two connections.~~ 
+
 Use resistor to fool the controller that the hall sensor is working properly. I suggest experimenting what combination of resistances works for your board, since water damage makes things unpredictable, as I experienced myself. Consider using a voltage divider - in my case it worked fine with only 1 resistor. (These are just symbolic colours, not the ones on the wire connecting to the module!)
 
 ## Photos of the module, 
